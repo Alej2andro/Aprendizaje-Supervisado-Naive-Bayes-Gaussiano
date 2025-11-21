@@ -55,7 +55,17 @@ Para ver el reporte completo con gráficos, revisa el archivo:
 ---
 
 ## 🔁 Cómo Reproducir el Análisis
-1. Clona el repositorio:
+
+1. Clonar este repositorio:
 ```bash
-git clone https://github.com/USUARIO/REPO.git
-https://github.com/Alej2andro.got
+git clone https://github.com/Alej2andro/Aprendizaje-Supervisado-Naive-Bayes-Gaussiano.git
+```
+
+2. Ingresar al directorio:
+```bash
+cd Aprendizaje-Supervisado-Naive-Bayes-Gaussiano
+```
+
+3. Abrir el archivo `.Rmd` en RStudio y ejecutar el documento:
+- **Knit → HTML** para ver el proyecto completo con gráficos y resultados.
+

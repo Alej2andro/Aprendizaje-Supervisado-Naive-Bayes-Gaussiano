@@ -2,7 +2,7 @@
 ### *Clasificación con Naive Bayes Gaussiano (R)*  
 
 📄 **Reporte HTML del proyecto Naive Bayes**  
-https://github.com/Alej2andro/Aprendizaje-Supervisado-Naive-Bayes-Gaussiano/blog/main/naivesbayesedataset.html
+https://github.com/Alej2andro/Aprendizaje-Supervisado-Naive-Bayes-Gaussiano/blob/main/naivesbayesedataset.html
 
 
 Este repositorio contiene un análisis completo aplicado a un dataset real utilizando el algoritmo **Naive Bayes Gaussiano** dentro del ecosistema R.  

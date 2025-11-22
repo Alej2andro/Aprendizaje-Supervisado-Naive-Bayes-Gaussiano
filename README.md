@@ -1,10 +1,8 @@
 # 🚀 Miniproyecto de Aprendizaje Supervisado  
 ### *Clasificación con Naive Bayes Gaussiano (R)*  
  
-📄 **Reporte HTML del proyecto**   
-
-👉 https://github.com/Alej2andro/Aprendizaje-Supervisado-Naive-Bayes-Gaussiano/blob/main/naivesbayesedataset.html
-
+📄 **Reporte HTML completo e interactivo**  
+👉 [**Ver aquí → Reporte final del proyecto Naive Bayes**](https://alej2andro.github.io/Aprendizaje-Supervisado-Naive-Bayes-Gaussiano/)
 
 
 Este repositorio contiene un análisis completo aplicado a un dataset real utilizando el algoritmo **Naive Bayes Gaussiano** dentro del ecosistema R.  

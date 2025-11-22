@@ -1,7 +1,7 @@
 # 🚀 Miniproyecto de Aprendizaje Supervisado  
 ### *Clasificación con Naive Bayes Gaussiano (R)*  
  
-📄 **Reporte HTML del proyecto**
+📄 **Reporte HTML del proyecto**   
 
 👉 https://github.com/Alej2andro/Aprendizaje-Supervisado-Naive-Bayes-Gaussiano/blob/main/naivesbayesedataset.html
 

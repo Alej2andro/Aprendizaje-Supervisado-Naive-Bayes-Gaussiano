@@ -2,19 +2,20 @@
 title: "Algoritmo Naive Bayes Gaussiano y K-Nearest Neighbors (KNN)"
 subtitle: "Proyecto Clasificación de Cultivares de Vino Mediante Aprendizaje Supervisado | Wine UCI Dataset"
 author: "Alejandro Figueroa Rojas"
-date: "Inicio 1 Noviembre 2025 - 20 noviembre 2025"
+date: "Noviembre 2025"
 output:
   html_document:
     toc: true
-    toc_float: true
-    highlight: "tango"
-    theme: "cosmo"
-    df_print: paged        # Tablas con formato tipo 'paged'
+    toc_float:
+      collapsed: true
+      smooth_scroll: true
+    highlight: tango
+    theme: cosmo
+    df_print: paged
   github_document:
-    toc: true              # Genera la Tabla de Contenidos
-    toc_depth: 3           # Nivel de encabezado máximo en el TOC
-    df_print: kable         # Tablas con formato 'kable'
-  
+    toc: true
+    toc_depth: 3
+    df_print: kable
 ---
 
 ```{r setup, include=FALSE}

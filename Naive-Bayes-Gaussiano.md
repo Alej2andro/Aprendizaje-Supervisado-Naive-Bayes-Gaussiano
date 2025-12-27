@@ -1,7 +1,7 @@
 Algoritmo Naive Bayes Gaussiano y K-Nearest Neighbors (KNN)
 ================
 Alejandro Figueroa Rojas
-Inicio 1 Noviembre 2025 - 20 noviembre 2025
+Noviembre 2025
 
 - [Introducción](#introducción)
   - [Motivación y Enfoque
@@ -583,18 +583,18 @@ print(asim_df[order(-abs(asim_df$Asimetria)), ])
 ```
 
                                          Variable Asimetria      Interpretacion
-    Magnesio                             Magnesio      1.08 Fuerte asimetría ❌
-    Acido_Malico                     Acido_Malico      1.02 Fuerte asimetría ❌
-    Intensidad_Color             Intensidad_Color      0.85          Moderada ⚠️
-    Prolina                               Prolina      0.75          Moderada ⚠️
+    Magnesio                             Magnesio      1.09 Fuerte asimetría ❌
+    Acido_Malico                     Acido_Malico      1.03 Fuerte asimetría ❌
+    Intensidad_Color             Intensidad_Color      0.86          Moderada ⚠️
+    Prolina                               Prolina      0.76          Moderada ⚠️
     Proantocianinas               Proantocianinas      0.51          Moderada ⚠️
-    Fenoles_No_Flavonoides Fenoles_No_Flavonoides      0.44        Simétrica ✅
+    Fenoles_No_Flavonoides Fenoles_No_Flavonoides      0.45        Simétrica ✅
     OD280_OD315_Diluidos     OD280_OD315_Diluidos     -0.30        Simétrica ✅
     Alcalinidad_Ceniza         Alcalinidad_Ceniza      0.21        Simétrica ✅
-    Ceniza                                 Ceniza     -0.17        Simétrica ✅
+    Ceniza                                 Ceniza     -0.18        Simétrica ✅
     Fenoles_Totales               Fenoles_Totales      0.09        Simétrica ✅
     Alcohol                               Alcohol     -0.05        Simétrica ✅
-    Flavonoides                       Flavonoides      0.02        Simétrica ✅
+    Flavonoides                       Flavonoides      0.03        Simétrica ✅
     Tono                                     Tono      0.02        Simétrica ✅
 
 ### Transformación logarítmica

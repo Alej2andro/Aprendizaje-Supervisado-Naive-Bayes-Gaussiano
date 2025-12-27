@@ -33,3 +33,6 @@ En este estudio se analiza la separación de clases mediante la densidad de prob
 
 ---
 *Si eres un reclutador o director de analítica interesado en perfiles con sólida base matemática y hambre de aprendizaje continuo, ¡hablemos!*
+📧 contacto.alejandro.figueroa.rojas@gmail.com  
+🔗 [LinkedIn](https://linkedin.com/in/alejandrofigueroarojas)  
+📂 [GitHub](https://github.com/Alej2andro)

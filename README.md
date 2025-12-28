@@ -10,7 +10,7 @@ Desarrollar un modelo robusto de clasificación para el dataset *Wine*, enfocán
 
 Puedes explorar el análisis completo y las visualizaciones interactivas aquí:
 
-👉 **[Reporte Interactivo - Naive Bayes Gaussiano](https://alej2andro.github.io/Aprendizaje-Supervisado-Naive-Bayes-Gaussiano/)**
+👉 **[Reporte Interactivo - Naive Bayes Gaussiano](https://alej2andro.github.io/Aprendizaje-Supervisado-Naive-Bayes-Gaussiano/index.html)**
 
 ---
 

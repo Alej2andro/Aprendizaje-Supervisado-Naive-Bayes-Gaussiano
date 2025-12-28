@@ -4,6 +4,10 @@ subtitle: "Proyecto Clasificación de Cultivares de Vino Mediante Aprendizaje Su
 author: "Alejandro Figueroa Rojas"
 date: "Noviembre 2025"
 output:
+  github_document:
+    toc: true
+    toc_depth: 3
+    df_print: kable
   html_document:
     toc: true
     toc_float:
@@ -12,10 +16,6 @@ output:
     highlight: tango
     theme: cosmo
     df_print: paged
-  github_document:
-    toc: true
-    toc_depth: 3
-    df_print: kable
 ---
 
 ```{r setup, include=FALSE}

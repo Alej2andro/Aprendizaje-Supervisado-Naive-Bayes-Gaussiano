@@ -285,20 +285,27 @@ summary(wine)
      $ V12: num  1.04 1.05 1.03 0.86 1.04 1.05 1.02 1.06 1.08 1.01 ...
      $ V13: num  3.92 3.4 3.17 3.45 2.93 2.85 3.58 3.58 2.85 3.55 ...
      $ V14: int  1065 1050 1185 1480 735 1450 1290 1295 1045 1045 ...
-           V1              V2              V3              V4              V5              V6        
-     Min.   :1.000   Min.   :11.03   Min.   :0.740   Min.   :1.360   Min.   :10.60   Min.   : 70.00  
-     1st Qu.:1.000   1st Qu.:12.36   1st Qu.:1.603   1st Qu.:2.210   1st Qu.:17.20   1st Qu.: 88.00  
-     Median :2.000   Median :13.05   Median :1.865   Median :2.360   Median :19.50   Median : 98.00  
-     Mean   :1.938   Mean   :13.00   Mean   :2.336   Mean   :2.367   Mean   :19.49   Mean   : 99.74  
-     3rd Qu.:3.000   3rd Qu.:13.68   3rd Qu.:3.083   3rd Qu.:2.558   3rd Qu.:21.50   3rd Qu.:107.00  
-     Max.   :3.000   Max.   :14.83   Max.   :5.800   Max.   :3.230   Max.   :30.00   Max.   :162.00  
-           V7              V8              V9              V10             V11              V12        
-     Min.   :0.980   Min.   :0.340   Min.   :0.1300   Min.   :0.410   Min.   : 1.280   Min.   :0.4800  
-     1st Qu.:1.742   1st Qu.:1.205   1st Qu.:0.2700   1st Qu.:1.250   1st Qu.: 3.220   1st Qu.:0.7825  
-     Median :2.355   Median :2.135   Median :0.3400   Median :1.555   Median : 4.690   Median :0.9650  
-     Mean   :2.295   Mean   :2.029   Mean   :0.3619   Mean   :1.591   Mean   : 5.058   Mean   :0.9574  
-     3rd Qu.:2.800   3rd Qu.:2.875   3rd Qu.:0.4375   3rd Qu.:1.950   3rd Qu.: 6.200   3rd Qu.:1.1200  
-     Max.   :3.880   Max.   :5.080   Max.   :0.6600   Max.   :3.580   Max.   :13.000   Max.   :1.7100  
+           V1              V2              V3              V4       
+     Min.   :1.000   Min.   :11.03   Min.   :0.740   Min.   :1.360  
+     1st Qu.:1.000   1st Qu.:12.36   1st Qu.:1.603   1st Qu.:2.210  
+     Median :2.000   Median :13.05   Median :1.865   Median :2.360  
+     Mean   :1.938   Mean   :13.00   Mean   :2.336   Mean   :2.367  
+     3rd Qu.:3.000   3rd Qu.:13.68   3rd Qu.:3.083   3rd Qu.:2.558  
+     Max.   :3.000   Max.   :14.83   Max.   :5.800   Max.   :3.230  
+           V5              V6               V7              V8       
+     Min.   :10.60   Min.   : 70.00   Min.   :0.980   Min.   :0.340  
+     1st Qu.:17.20   1st Qu.: 88.00   1st Qu.:1.742   1st Qu.:1.205  
+     Median :19.50   Median : 98.00   Median :2.355   Median :2.135  
+     Mean   :19.49   Mean   : 99.74   Mean   :2.295   Mean   :2.029  
+     3rd Qu.:21.50   3rd Qu.:107.00   3rd Qu.:2.800   3rd Qu.:2.875  
+     Max.   :30.00   Max.   :162.00   Max.   :3.880   Max.   :5.080  
+           V9              V10             V11              V12        
+     Min.   :0.1300   Min.   :0.410   Min.   : 1.280   Min.   :0.4800  
+     1st Qu.:0.2700   1st Qu.:1.250   1st Qu.: 3.220   1st Qu.:0.7825  
+     Median :0.3400   Median :1.555   Median : 4.690   Median :0.9650  
+     Mean   :0.3619   Mean   :1.591   Mean   : 5.058   Mean   :0.9574  
+     3rd Qu.:0.4375   3rd Qu.:1.950   3rd Qu.: 6.200   3rd Qu.:1.1200  
+     Max.   :0.6600   Max.   :3.580   Max.   :13.000   Max.   :1.7100  
           V13             V14        
      Min.   :1.270   Min.   : 278.0  
      1st Qu.:1.938   1st Qu.: 500.5  
@@ -331,9 +338,10 @@ names(wine) <- nombres_columnas_wine
 names(wine)
 ```
 
-     [1] "Clase_Tipo_Vino"        "Alcohol"                "Acido_Malico"           "Ceniza"                
-     [5] "Alcalinidad_Ceniza"     "Magnesio"               "Fenoles_Totales"        "Flavonoides"           
-     [9] "Fenoles_No_Flavonoides" "Proantocianinas"        "Intensidad_Color"       "Tono"                  
+     [1] "Clase_Tipo_Vino"        "Alcohol"                "Acido_Malico"          
+     [4] "Ceniza"                 "Alcalinidad_Ceniza"     "Magnesio"              
+     [7] "Fenoles_Totales"        "Flavonoides"            "Fenoles_No_Flavonoides"
+    [10] "Proantocianinas"        "Intensidad_Color"       "Tono"                  
     [13] "OD280_OD315_Diluidos"   "Prolina"               
 
 **Definición de Variables del Dataset Wine**
@@ -401,7 +409,7 @@ plot_all <-wine %>%
 plot_all
 ```
 
-<img src="Naive-Bayes-Gaussiano_files/figure-gfm/Distr variables(crítico para naive bayes)-1.png" width="100%" height="auto" style="display: block; margin: auto;" />
+<img src="Naive-bayes-Gaussiano_files/figure-gfm/Distr variables(crítico para naive bayes)-1.png" width="100%" height="auto" style="display: block; margin: auto;" />
 
 **Distribución de Variables Predictoras**
 
@@ -436,7 +444,7 @@ plot_alcohol<- ggplot(wine, aes(x = Alcohol, fill = Clase_Tipo_Vino)) +
 plot_alcohol
 ```
 
-<img src="Naive-Bayes-Gaussiano_files/figure-gfm/Distr Alcohol Tipo de Vino-1.png" width="100%" height="auto" style="display: block; margin: auto;" />
+<img src="Naive-bayes-Gaussiano_files/figure-gfm/Distr Alcohol Tipo de Vino-1.png" width="100%" height="auto" style="display: block; margin: auto;" />
 
 **Distribución del Alcohol por Tipo de Vino**
 
@@ -543,7 +551,7 @@ Shapiro_Wilk_plot <- ggplot(resultados_normalidad, aes(x = reorder(Variable, p_v
 print(Shapiro_Wilk_plot)
 ```
 
-<img src="Naive-Bayes-Gaussiano_files/figure-gfm/normalidad plot-1.png" width="100%" height="auto" style="display: block; margin: auto;" />
+<img src="Naive-bayes-Gaussiano_files/figure-gfm/normalidad plot-1.png" width="100%" height="auto" style="display: block; margin: auto;" />
 
 **Interpretación Visual:**
 
@@ -678,7 +686,7 @@ p4 <- ggplot(wine_final, aes(x = Acido_Malico)) +
   )
 ```
 
-<img src="Naive-Bayes-Gaussiano_files/figure-gfm/plot_transformacion-1.png" width="100%" height="auto" style="display: block; margin: auto;" />
+<img src="Naive-bayes-Gaussiano_files/figure-gfm/plot_transformacion-1.png" width="100%" height="auto" style="display: block; margin: auto;" />
 **Análisis**
 
 ANTES (izquierda, naranja): Ambas variables (Magnesio y Ácido Málico)
@@ -725,7 +733,7 @@ Distr_Clase<-ggplot(wine, aes(x = Clase_Tipo_Vino, fill = Clase_Tipo_Vino)) +
 print(Distr_Clase)
 ```
 
-<img src="Naive-Bayes-Gaussiano_files/figure-gfm/balance-1.png" width="100%" height="auto" style="display: block; margin: auto;" />
+<img src="Naive-bayes-Gaussiano_files/figure-gfm/balance-1.png" width="100%" height="auto" style="display: block; margin: auto;" />
 <br>
 
 **Explicacion de grafica**
@@ -749,7 +757,7 @@ corrplot(cor_matrix, method = "color", type = "upper",
          mar = c(0, 0, 3, 0))    # margen superior para el título
 ```
 
-<img src="Naive-Bayes-Gaussiano_files/figure-gfm/Matrix correlación entre Predictores) -1.png" width="100%" height="auto" style="display: block; margin: auto;" />
+<img src="Naive-bayes-Gaussiano_files/figure-gfm/Matrix correlación entre Predictores) -1.png" width="100%" height="auto" style="display: block; margin: auto;" />
 
 ``` r
 # Identificar correlaciones fuertes (>0.7 en valor absoluto)
@@ -858,7 +866,7 @@ Outliers<- wine %>%
 print(Outliers)
 ```
 
-<img src="Naive-Bayes-Gaussiano_files/figure-gfm/plot outliers-1.png" width="100%" height="auto" style="display: block; margin: auto;" />
+<img src="Naive-bayes-Gaussiano_files/figure-gfm/plot outliers-1.png" width="100%" height="auto" style="display: block; margin: auto;" />
 <br>
 
 **Impacto de los outliers**
@@ -925,7 +933,7 @@ separabilidad <- ggpairs(wine,
 print(separabilidad)
 ```
 
-<img src="Naive-Bayes-Gaussiano_files/figure-gfm/separabilidad-1.png" width="100%" height="auto" style="display: block; margin: auto;" />
+<img src="Naive-bayes-Gaussiano_files/figure-gfm/separabilidad-1.png" width="100%" height="auto" style="display: block; margin: auto;" />
 <br>
 
 **Interpretación gráfica**
@@ -1012,7 +1020,7 @@ dist_plot <- ggpairs(
 print(dist_plot)
 ```
 
-<img src="Naive-Bayes-Gaussiano_files/figure-gfm/distribuciones_gaussianas_clase-1.png" width="100%" height="auto" style="display: block; margin: auto;" />
+<img src="Naive-bayes-Gaussiano_files/figure-gfm/distribuciones_gaussianas_clase-1.png" width="100%" height="auto" style="display: block; margin: auto;" />
 
 **Interpretación de Distribuciones por Clase**
 
@@ -1772,7 +1780,7 @@ ggplot(resultados_aprendizaje, aes(x = Tamaño, y = Accuracy)) +
   )
 ```
 
-<img src="Naive-Bayes-Gaussiano_files/figure-gfm/curva_learn_nb-1.png" width="100%" height="auto" style="display: block; margin: auto;" />
+<img src="Naive-bayes-Gaussiano_files/figure-gfm/curva_learn_nb-1.png" width="100%" height="auto" style="display: block; margin: auto;" />
 <br>
 
 **Interpretación de la Curva**
@@ -1823,7 +1831,7 @@ ggplot(modelo_cv$resample, aes(x = Accuracy)) +
   )
 ```
 
-<img src="Naive-Bayes-Gaussiano_files/figure-gfm/Distr acc validación cruzada-1.png" width="100%" height="auto" style="display: block; margin: auto;" />
+<img src="Naive-bayes-Gaussiano_files/figure-gfm/Distr acc validación cruzada-1.png" width="100%" height="auto" style="display: block; margin: auto;" />
 <br>
 
 **Interpretación de Distribución de Accuracy - Validación Cruzada 10x5**
@@ -2358,7 +2366,7 @@ theme_minimal(base_size=14) +
 print(learning_curve)
 ```
 
-<img src="Naive-Bayes-Gaussiano_files/figure-gfm/Curva Aprendizaje KNN-1.png" width="100%" height="auto" style="display: block; margin: auto;" />
+<img src="Naive-bayes-Gaussiano_files/figure-gfm/Curva Aprendizaje KNN-1.png" width="100%" height="auto" style="display: block; margin: auto;" />
 <br> **Interpretación de la Curva de Aprendizaje del KNN**
 
 Tendencia general: Se observa una mejora progresiva en el Accuracy
@@ -2585,7 +2593,7 @@ ggplot(knn_model$results, aes(x = k, y = Accuracy)) +
     panel.grid.minor = element_blank(), panel.grid.major.x = element_blank())
 ```
 
-<img src="Naive-Bayes-Gaussiano_files/figure-gfm/plot búsqueda k óptimo-1.png" width="100%" height="auto" style="display: block; margin: auto;" />
+<img src="Naive-bayes-Gaussiano_files/figure-gfm/plot búsqueda k óptimo-1.png" width="100%" height="auto" style="display: block; margin: auto;" />
 <br>
 
 **Interpretación Detallada del Gráfico: Búsqueda del K Óptimo en KNN**
@@ -2739,7 +2747,7 @@ p_knn <- ggplot() +
 print(p_knn)
 ```
 
-<img src="Naive-Bayes-Gaussiano_files/figure-gfm/plot_decision_boundaries_knn-1.png" width="100%" height="auto" style="display: block; margin: auto;" />
+<img src="Naive-bayes-Gaussiano_files/figure-gfm/plot_decision_boundaries_knn-1.png" width="100%" height="auto" style="display: block; margin: auto;" />
 
 **Interpretación de las Fronteras KNN**
 
@@ -3012,10 +3020,14 @@ cat(
        ✓ Test independiente: TRUE
 
     2. Proporciones de clases:
-     Clase Train.Var1 Train.Freq Test.Var1 Test.Freq Diferencia.Var1 Diferencia.Freq
-         1          1     0.3333         1    0.3269               1          0.0064
-         2          2     0.3968         2    0.4038               2          0.0070
-         3          3     0.2698         3    0.2692               3          0.0006
+     Clase Train.Var1 Train.Freq Test.Var1 Test.Freq Diferencia.Var1
+         1          1     0.3333         1    0.3269               1
+         2          2     0.3968         2    0.4038               2
+         3          3     0.2698         3    0.2692               3
+     Diferencia.Freq
+              0.0064
+              0.0070
+              0.0006
        ✓ Estratificación correcta: TRUE
 
     3. Integridad del dataset:
@@ -3086,7 +3098,7 @@ plot_confusion_matrix(conf_matrix_data, target_col = "Target",
                       font_col_percentages = font(size = 2))
 ```
 
-<img src="Naive-Bayes-Gaussiano_files/figure-gfm/Matriz de confusión-1.png" width="100%" height="auto" style="display: block; margin: auto;" />
+<img src="Naive-bayes-Gaussiano_files/figure-gfm/Matriz de confusión-1.png" width="100%" height="auto" style="display: block; margin: auto;" />
 <br>
 
 **Interpretación gráfica**
@@ -3306,7 +3318,7 @@ p <- ggplot() +
 print(p)
 ```
 
-<img src="Naive-Bayes-Gaussiano_files/figure-gfm/plot decision_boundaries-1.png" width="100%" height="auto" style="display: block; margin: auto;" />
+<img src="Naive-bayes-Gaussiano_files/figure-gfm/plot decision_boundaries-1.png" width="100%" height="auto" style="display: block; margin: auto;" />
 
 **Interpretación del Gráfico**
 
@@ -3852,7 +3864,7 @@ ggplot(cv_data, aes(x = Métrica, y = Valor, fill = Métrica)) +
     axis.text.x = element_text(face = "bold", size = 14))
 ```
 
-<img src="Naive-Bayes-Gaussiano_files/figure-gfm/distr desempeño vc-1.png" width="100%" height="auto" style="display: block; margin: auto;" />
+<img src="Naive-bayes-Gaussiano_files/figure-gfm/distr desempeño vc-1.png" width="100%" height="auto" style="display: block; margin: auto;" />
 
 <br>
 
@@ -3972,7 +3984,7 @@ ggplot(resumen_aciertos, aes(x = Modelo, y = Cantidad, fill = Resultado)) +
   )
 ```
 
-<img src="Naive-Bayes-Gaussiano_files/figure-gfm/grafico_coincidencias_barras-1.png" width="100%" height="auto" style="display: block; margin: auto;" />
+<img src="Naive-bayes-Gaussiano_files/figure-gfm/grafico_coincidencias_barras-1.png" width="100%" height="auto" style="display: block; margin: auto;" />
 
 **Interpretación**
 
@@ -4113,7 +4125,7 @@ comparacion_fronteras <- p_nb | p_knn_final
 print(comparacion_fronteras)
 ```
 
-<img src="Naive-Bayes-Gaussiano_files/figure-gfm/compare_limts_nb_knn-1.png" width="100%" height="100%" style="display: block; margin: auto;" />
+<img src="Naive-bayes-Gaussiano_files/figure-gfm/compare_limts_nb_knn-1.png" width="100%" height="100%" style="display: block; margin: auto;" />
 
 <br>
 
@@ -4390,7 +4402,7 @@ plot.title = element_text(face = "bold", hjust = 0.5, size = 17, margin = margin
 print(comparacion_nbg_knn)
 ```
 
-<img src="Naive-Bayes-Gaussiano_files/figure-gfm/plot_comparacion_nb_knn-1.png" width="100%" height="auto" style="display: block; margin: auto;" />
+<img src="Naive-bayes-Gaussiano_files/figure-gfm/plot_comparacion_nb_knn-1.png" width="100%" height="auto" style="display: block; margin: auto;" />
 
 <br>
 
